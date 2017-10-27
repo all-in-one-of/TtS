@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - P
-  - W
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -15,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - UniverseA
-  - UniverseB
-  - MainUniverse
+  - 
+  - 
+  - 
   - 
   - 
   - 
