@@ -6,10 +6,10 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: hfog_green
-  m_Shader: {fileID: 4800000, guid: 9ad90bdc363181a4e9daddc5d8d70fd5, type: 3}
+  m_Name: VisionConeA
+  m_Shader: {fileID: 4800000, guid: 4e60338d591bec74a84fb319fba815e9, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 1
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -57,10 +57,8 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _DepthPosition: -5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Emission: 0.8
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -71,11 +69,8 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SurfacePosition: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.66176474, g: 0.29195502, b: 0.29195502, a: 1}
-    - _DepthColor: {r: 0.31617647, g: 0.07206963, b: 0.07206963, a: 1}
+    - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SurfaceColor: {r: 0.8161765, g: 0.7324066, b: 0.5521194, a: 1}

@@ -17,6 +17,7 @@ Shader "Custom/FinalComposite" {
 			sampler2D _UniverseADepthTexture;
 			sampler2D _UniverseBColorTexture;
 			sampler2D _UniverseBDepthTexture;
+			sampler2D _VisionConeCutoutTexture;
 
 			struct appdata
 			{
@@ -58,13 +59,13 @@ Shader "Custom/FinalComposite" {
 				float mainCamDepthPixel = 1-half4(mainCamDepthValue,mainCamDepthValue,mainCamDepthValue,1).r;
 
 				half4 universeAColorPixel = tex2D(_UniverseAColorTexture, i.uv);
-				float universeADepthPixel = tex2D(_UniverseADepthTexture, inverseUV).r;
+				float universeADepthPixel = tex2D(_VisionConeCutoutTexture, i.uv).r * (1-tex2D(_UniverseADepthTexture, inverseUV).r);
 				
 				half4 universeBColorPixel = tex2D(_UniverseBColorTexture, i.uv);
-				float universeBDepthPixel = tex2D(_UniverseBDepthTexture, inverseUV).r;
+				float universeBDepthPixel = tex2D(_VisionConeCutoutTexture, i.uv).g * (1-tex2D(_UniverseBDepthTexture, inverseUV).r);
 
 				//float3 closestPixel = float3(mainCamDepthPixel>universeADepthPixel, mainCamDepthPixel>universeBDepthPixel, universeADepthPixel>universeBDepthPixel);
-
+				/*
 				float m = max(mainCamDepthPixel, universeADepthPixel);
 
 				float stepMainA = step(mainCamDepthPixel, universeADepthPixel);
@@ -72,11 +73,25 @@ Shader "Custom/FinalComposite" {
 				
 				float t = step(m, universeBDepthPixel);
 				half4 col = lerp(lerpMainA, universeBColorPixel, t);
+				*/
+
+				float maxAB = max(universeADepthPixel, universeBDepthPixel);
+
+				float stepAB = step(universeADepthPixel, universeBDepthPixel);
+				half4 lerpAB = lerp(universeAColorPixel, universeBColorPixel, stepAB);
+				
+				float stepABMain = step(maxAB, mainCamDepthPixel);
+				half4 col = lerp(lerpAB, mainCamColorPixel, stepABMain);
 				
 
 				return col;
-				//return universeAColorPixel;
 				//return half4(universeBDepthPixel,universeBDepthPixel,universeBDepthPixel,1);
+				//return half4(mainCamDepthPixel,mainCamDepthPixel,mainCamDepthPixel,1);;
+				//return half4(t,t,t,1);
+				//return mainCamColorPixel;
+				//return tex2D(_VisionConeCutoutTexture, inverseUV);
+				//return universeAColorPixel;
+				//return half4(mainCamDepthPixel,mainCamDepthPixel,mainCamDepthPixel,1);
 				//return universeBColorPixel*half4(universeBDepthPixel,universeBDepthPixel,universeBDepthPixel,1);
 				//return half4(universeBDepthPixel,universeBDepthPixel,universeBDepthPixel,1);
 			}
