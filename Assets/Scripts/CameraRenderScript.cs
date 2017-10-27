@@ -22,6 +22,7 @@ public class CameraRenderScript : MonoBehaviour {
     [SerializeField]
     private Renderer visionConeMaterialB;
 
+
     private void Awake()
     {
         var renderTextureA = new RenderTexture(Screen.width, Screen.height, 24);
@@ -42,9 +43,10 @@ public class CameraRenderScript : MonoBehaviour {
 
         depthHackBufferB = new CommandBuffer();
         depthHackBufferB.ClearRenderTarget(true, true, Color.black, 0);
-        depthHackBufferB.name = "Vision Cone Depth Hack Buffer A";
+        depthHackBufferB.name = "Vision Cone Depth Hack Buffer B";
         depthHackBufferB.DrawRenderer(visionConeB, new Material(Shader.Find("Hidden/DepthHack")));
 
-        cameraB.AddCommandBuffer(CameraEvent.AfterDepthTexture, depthHackBufferB);
+        cameraB.AddCommandBuffer(CameraEvent.BeforeDepthTexture, depthHackBufferB);
     }
+    
 }

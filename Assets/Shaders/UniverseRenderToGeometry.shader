@@ -5,7 +5,7 @@
 		Tags {
 			"RenderType"="Opaque"
 		}
-
+		ZTest LEqual
 		ZWrite On
 
 		Pass
@@ -49,9 +49,9 @@
 				#if UNITY_UV_STARTS_AT_TOP
 					screen_uv.y = 1-screen_uv.y;
 				#endif
-
+				
 				float invert = 1 - i.depth;
-				//return fixed4(invert, invert, invert, 1) * _Color;
+				//return fixed4(invert, invert, invert, 1);
 
 				// Do the thing!
 				fixed4 col = tex2D(_UniverseTexture, screen_uv);
