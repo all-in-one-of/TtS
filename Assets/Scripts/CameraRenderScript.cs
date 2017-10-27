@@ -38,7 +38,7 @@ public class CameraRenderScript : MonoBehaviour {
         depthHackBufferA.name = "Vision Cone Depth Hack Buffer A";
         depthHackBufferA.DrawRenderer(visionConeA, new Material(Shader.Find("Hidden/DepthHack")));
 
-        cameraA.AddCommandBuffer(CameraEvent.AfterDepthTexture, depthHackBufferA);
+        cameraA.AddCommandBuffer(CameraEvent.BeforeDepthTexture, depthHackBufferA);
 
         depthHackBufferB = new CommandBuffer();
         depthHackBufferB.ClearRenderTarget(true, true, Color.black, 0);
