@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 33233168922514236}
   - component: {fileID: 23694412329037524}
   m_Layer: 0
-  m_Name: han_geo
+  m_Name: W_geo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 33513552448201538}
   - component: {fileID: 23062561926517980}
   m_Layer: 0
-  m_Name: hans_vision
+  m_Name: W_vision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,8 +93,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1101604868751366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 6.37, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 4183239244570402}
   - {fileID: 4593863402543930}

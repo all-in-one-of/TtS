@@ -112,6 +112,38 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &43027892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b548c5e655726a546b683d0843da0f61, type: 3}
+  m_Name: curve_UndoInfo
+  m_EditorClassIdentifier: 
+  isGeoVisible: 1
+  showPinnedInstances: 1
+  showOnlyVertexColours: 0
+  generateUVs: 0
+  generateLightmapUV2s: 0
+  generateTangents: 1
+  enableCooking: 1
+  cookingTriggersDownCooks: 1
+  playmodePerFrameCooking: 0
+  pushUnityTransformToHoudini: 1
+  transformChangeTriggersCooks: 1
+  importTemplatedGeos: 0
+  splitGeosByGroupOverride: 0
+  splitGeosByGroup: 1
+  splitPointsGeosByGroupOverride: 0
+  splitPointsByVertexAttribute: 1
+  splitPointsByVertexAttributeOverride: 0
+  omitPartNameEnumeration: 0
+  bakeStartTime: 0
+  bakeEndTime: 1
+  bakeSamplesPerSecond: 30
 --- !u!1 &52261817
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +266,951 @@ MonoBehaviour:
   - 1.2
   - 1.2
   parmStringValues: []
+--- !u!1 &69203679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 69203685}
+  - component: {fileID: 69203684}
+  - component: {fileID: 69203683}
+  - component: {fileID: 69203682}
+  - component: {fileID: 69203681}
+  - component: {fileID: 69203680}
+  m_Layer: 0
+  m_Name: curve1
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &69203680
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 69203679}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 637227758}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &69203681
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 69203679}
+  m_Mesh: {fileID: 1517209450}
+--- !u!114 &69203682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 69203679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d680f9862ca644c86a271fb06b596d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myControl: {fileID: 69203684}
+  myParms: {fileID: 69203683}
+  myPoints:
+  - {x: -22.18696, y: 0, z: 10.74025}
+  - {x: -16.7809, y: 0, z: 14.08741}
+  - {x: -10.92697, y: 0, z: 13.28482}
+  - {x: -7.570927, y: 0, z: 21.18007}
+  - {x: -2.196481, y: 0, z: 21.56981}
+  - {x: 1.739854, y: 0, z: 16.45903}
+  myVertices:
+  - {x: -22.18696, y: 0, z: 10.74025}
+  - {x: -16.7809, y: 0, z: 14.08741}
+  - {x: -10.92697, y: 0, z: 13.28482}
+  - {x: -7.570927, y: 0, z: 21.18007}
+  - {x: -2.196481, y: 0, z: 21.56981}
+  - {x: 1.739854, y: 0, z: 16.45903}
+  myEditable: 1
+  myCurrentMode: 1
+  myModeChangeWait: 0
+  myIsFirstCook: 0
+--- !u!114 &69203683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 69203679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3a9e8ade0cb8a40b446946ded31bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myControl: {fileID: 69203684}
+  myEditable: 1
+  myParmCount: 15
+  myParmIntValueCount: 9
+  myParmFloatValueCount: 2
+  myprParmStringValueCoun: 1
+  myprParmChoiceCount: 19
+  myParms:
+  - id: 0
+    parentId: -1
+    childIndex: 0
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 3
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 0
+    floatValuesIndex: 0
+    stringValuesIndex: 0
+    choiceIndex: 0
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 1
+    parentId: -1
+    childIndex: 1
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 3
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 1
+    floatValuesIndex: 0
+    stringValuesIndex: 0
+    choiceIndex: 3
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 2
+    parentId: -1
+    childIndex: 2
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 2
+    floatValuesIndex: 0
+    stringValuesIndex: 0
+    choiceIndex: 6
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 3
+    parentId: -1
+    childIndex: 3
+    type: 11
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 2
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 2
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 6
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 4
+    parentId: -1
+    childIndex: 4
+    type: 13
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 5
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 2
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 6
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 5
+    parentId: -1
+    childIndex: 5
+    type: 13
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 3
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 2
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 6
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 6
+    parentId: 4
+    childIndex: 0
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 2
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 6
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 7
+    parentId: 4
+    childIndex: 1
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 3
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 8
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 8
+    parentId: 4
+    childIndex: 2
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 4
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 10
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 9
+    parentId: 4
+    childIndex: 3
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 1
+    hasMax: 1
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 2
+    max: 11
+    UIMin: 2
+    UIMax: 11
+    invisible: 0
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 5
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 10
+    parentId: 4
+    childIndex: 4
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 3
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 6
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 11
+    parentId: 5
+    childIndex: 0
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 1
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 7
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 15
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 12
+    parentId: 5
+    childIndex: 1
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 1
+    hasMax: 1
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 1
+    UIMin: 0
+    UIMax: 1
+    invisible: 0
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 7
+    floatValuesIndex: 1
+    stringValuesIndex: 1
+    choiceIndex: 15
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 13
+    parentId: 5
+    childIndex: 2
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 7
+    floatValuesIndex: 2
+    stringValuesIndex: 1
+    choiceIndex: 15
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 14
+    parentId: -1
+    childIndex: 12
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 8
+    floatValuesIndex: 2
+    stringValuesIndex: 1
+    choiceIndex: 17
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  myParmIntValues: 000000000100000000000000000000000000000004000000000000000000000000000000
+  myParmFloatValues:
+  - 0.01
+  - 0
+  myParmStringHandles: 404a0000
+  myParmChoiceLists:
+  - parentParmId: 0
+  - parentParmId: 0
+  - parentParmId: 0
+  - parentParmId: 1
+  - parentParmId: 1
+  - parentParmId: 1
+  - parentParmId: 6
+  - parentParmId: 6
+  - parentParmId: 7
+  - parentParmId: 7
+  - parentParmId: 8
+  - parentParmId: 8
+  - parentParmId: 10
+  - parentParmId: 10
+  - parentParmId: 10
+  - parentParmId: 13
+  - parentParmId: 13
+  - parentParmId: 14
+  - parentParmId: 14
+  myParmInfoStrings:
+  - typeInfo: 
+    name: type
+    label: Primitive Type
+    templateName: type
+    help: 
+  - typeInfo: 
+    name: method
+    label: Method
+    templateName: method
+    help: 
+  - typeInfo: 
+    name: coords
+    label: Coordinates
+    templateName: coords
+    help: 
+  - typeInfo: 
+    name: stdswitcher
+    label: 
+    templateName: 
+    help: 
+  - typeInfo: 
+    name: stdswitcher_0
+    label: Curve Properties
+    templateName: stdswitcher_0
+    help: 
+  - typeInfo: 
+    name: stdswitcher_1
+    label: Fitting Properties
+    templateName: stdswitcher_1
+    help: 
+  - typeInfo: 
+    name: close
+    label: Close
+    templateName: close
+    help: 
+  - typeInfo: 
+    name: reverse
+    label: Reverse
+    templateName: reverse
+    help: 
+  - typeInfo: 
+    name: normalize
+    label: Normalize Basis
+    templateName: normalize
+    help: 
+  - typeInfo: 
+    name: order
+    label: Order
+    templateName: order
+    help: 
+  - typeInfo: 
+    name: param
+    label: Parameterization
+    templateName: param
+    help: 
+  - typeInfo: 
+    name: tolerance
+    label: Tolerance
+    templateName: tolerance
+    help: 
+  - typeInfo: 
+    name: smooth
+    label: Smoothness
+    templateName: smooth
+    help: 
+  - typeInfo: 
+    name: csharp
+    label: Preserve Sharp Corners
+    templateName: csharp
+    help: 
+  - typeInfo: 
+    name: keepgeo
+    label: Keep Input Geometry
+    templateName: keepgeo
+    help: 
+  myParmInputs:
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  myParmChoiceInfoStrings:
+  - label: Polygon
+    value: poly
+  - label: NURBS
+    value: nurbs
+  - label: Bezier
+    value: bezier
+  - label: CVs
+    value: cv
+  - label: Breakpoints
+    value: breakpoints
+  - label: Freehand
+    value: freehand
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: Uniform
+    value: uniform
+  - label: Chord Length
+    value: chrdlen
+  - label: Centripetal
+    value: centrip
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: off
+    value: off
+  - label: on
+    value: on
+  myParmStringValues:
+  - '22.18696,0,10.74025 16.7809,0,14.08741 10.92697,0,13.28482 7.570927,0,21.18007
+    2.196481,0,21.56981 -1.739854,0,16.45903 '
+  myLastChangedParmId: -1
+  myParmsUndoInfo: {fileID: 308396231}
+  myFolderListSelections: 0000000000000000
+  myFolderListSelectionIds: ffffffffffffffff
+--- !u!114 &69203684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 69203679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad31c8232e430a42976eda17d3b3f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAssetId: 77
+  myNodeId: 77
+  myObjectNodeId: 78
+  myAsset: {fileID: 69203684}
+  myObjectId: -1
+  myObjectName: object_name
+  myObjectVisible: 0
+  myObjectInfo:
+    hasTransformChanged: 0
+    haveGeosChanged: 0
+    isVisible: 0
+    isInstancer: 0
+    isInstanced: 0
+    geoCount: 0
+    nodeId: -1
+    objectToInstanceId: 0
+  myGeos: []
+  myNodeInfo:
+    id: 77
+    parentId: 78
+    nameSH: 18796
+    type: 2
+    isValid: 1
+    totalCookCount: 1
+    uniqueHoudiniNodeId: 4152
+    parmCount: 15
+    parmIntValueCount: 9
+    parmFloatValueCount: 2
+    parmStringValueCount: 1
+    parmChoiceCount: 19
+    childNodeCount: 0
+    inputCount: 1
+    createdPostAssetLoad: 1
+  myPreset: 235053495f5052455345540a76657273696f6e20322e30610a6f7076616c7565730a7b0a76657273696f6e20302e380a74797065095b2030096c6f636b733d30205d09280922706f6c792209290a6d6574686f64095b2030096c6f636b733d30205d09280922627265616b706f696e74732209290a636f6f726473095b2030096c6f636b733d30205d0928092232322e31383639362c302c31302e37343032352031362e373830392c302c31342e30383734312031302e39323639372c302c31332e323834383220372e3537303932372c302c32312e313830303720322e3139363438312c302c32312e3536393831202d312e3733393835342c302c31362e3435393033202209290a7374647377697463686572095b2030096c6f636b733d30205d09280930093009290a636c6f7365095b2030096c6f636b733d30205d092809226f66662209290a72657665727365095b2030096c6f636b733d30205d092809226f66662209290a6e6f726d616c697a65095b2030096c6f636b733d30205d092809226f66662209290a6f72646572095b2030096c6f636b733d30205d0928093409290a706172616d095b2030096c6f636b733d30205d09280922756e69666f726d2209290a746f6c6572616e6365095b2030096c6f636b733d30205d092809302e303109290a736d6f6f7468095b2030096c6f636b733d30205d0928093009290a637368617270095b2030096c6f636b733d30205d092809226f66662209290a6b65657067656f095b2030096c6f636b733d30205d092809226f66662209290a7d0a
+  myAssetValidationId: 4152
+  myAssetName: curve1
+  myAssetOpName: Sop/curve
+  myAssetHelp: 
+  myAssetType: 2
+  myTransformInputCount: 0
+  myGeoInputCount: 1
+  myGeoInputsTransformTypes: 01000000
+  myDownStreamTransformAssets: []
+  myUpStreamTransformAssets: []
+  myUpStreamTransformObjects: []
+  myUpStreamGeoAssets:
+  - {fileID: 0}
+  myUpStreamGeoObjects:
+  - {fileID: 0}
+  myUpStreamGeoInputAssetIds: ffffffff
+  myUpStreamGeoInputAssetValidationIds: ffffffff
+  myDownStreamAssets: []
+  myPresetsMap: {fileID: 0}
+  myObjectCount: 0
+  myHandleCount: 1
+  myGameObjects: []
+  myGeoAttributeManagerMap: {fileID: 0}
+  myBakeStartTime: 0
+  myBakeEndTime: 1
+  myBakeSamplesPerSecond: 30
+  myShowHoudiniControls: 1
+  myShowCookLog: 0
+  myShowHelp: 0
+  myShowAssetSettings: 1
+  myShowBakeOptions: 0
+  myShowPaintTools: 0
+  myShowInputControls: 1
+  myAssetOptionsCategory: 0
+  myIsGeoVisible: 1
+  myShowPinnedInstances: 1
+  myShowOnlyVertexColours: 0
+  myGenerateUVs: 0
+  myGenerateLightmapUV2s: 0
+  myGenerateTangents: 1
+  myEnableCooking: 1
+  myCookingTriggersDownCooks: 1
+  myPlaymodePerFrameCooking: 0
+  myPushUnityTransformToHoudini: 1
+  myTransformChangeTriggersCooks: 1
+  myImportTemplatedGeos: 0
+  mySplitGeosByGroupOverride: 0
+  mySplitGeosByGroup: 1
+  mySplitPointsByVertexAttributesOverride: 0
+  mySplitPointsByVertexAttributes: 1
+  myOmitPartNameEnumeration: 0
+  myEnableLogging: 0
+  myTransInputNames: []
+  myGeoInputNames:
+  - 'Geometry Input #1'
+  myLastLocalToWorld:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: -0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  myAssetOTLUndoInfo: {fileID: 1741751430}
+--- !u!4 &69203685
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 69203679}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &291617342
 Material:
   serializedVersion: 6
@@ -265,6 +1242,38 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+--- !u!114 &308396231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a6a2b6b2be300d4b8019f770b1db8ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parmNames:
+  - type
+  - method
+  - coords
+  - close
+  - reverse
+  - normalize
+  - order
+  - param
+  - tolerance
+  - smooth
+  - csharp
+  - keepgeo
+  parmIndices: 000000000100000000000000020000000300000004000000050000000600000000000000010000000700000008000000
+  parmIntValues: 000000000100000000000000000000000000000004000000000000000000000000000000
+  parmFloatValues:
+  - 0.01
+  - 0
+  parmStringValues:
+  - '22.18696,0,10.74025 16.7809,0,14.08741 10.92697,0,13.28482 7.570927,0,21.18007
+    2.196481,0,21.56981 -1.739854,0,16.45903 '
 --- !u!1 &333767729
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,6 +1659,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 26.934002, z: 0}
+--- !u!21 &637227758
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Houdini/Line
+  m_Shader: {fileID: 4800000, guid: a18b443cd91dfe54eb3b1648309f6e00, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &644787351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,6 +2211,1116 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1 &987362190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 987362196}
+  - component: {fileID: 987362195}
+  - component: {fileID: 987362194}
+  - component: {fileID: 987362193}
+  - component: {fileID: 987362192}
+  - component: {fileID: 987362191}
+  m_Layer: 0
+  m_Name: curve
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &987362191
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 987362190}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 1099649796}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &987362192
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 987362190}
+  m_Mesh: {fileID: 1041761785}
+--- !u!114 &987362193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 987362190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d680f9862ca644c86a271fb06b596d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myControl: {fileID: 987362195}
+  myParms: {fileID: 987362194}
+  myPoints:
+  - {x: -15.79034, y: 0, z: 17.82955}
+  - {x: -16.64602, y: 0, z: 10.79338}
+  - {x: -17.38643, y: -0.22402, z: 6.966935}
+  - {x: -18.11097, y: -0.3032074, z: 3.655565}
+  - {x: -18.99939, y: 0, z: 0.9429135}
+  - {x: -25.11811, y: 0, z: 3.412661}
+  - {x: -28.97993, y: 0, z: 7.589516}
+  - {x: -28.09891, y: 0, z: 12.83029}
+  - {x: -25.97062, y: 0, z: 15.28886}
+  - {x: -25.84221, y: 0, z: 18.47073}
+  - {x: -28.04795, y: 0, z: 20.72934}
+  - {x: -25.98528, y: 0, z: 23.31487}
+  - {x: -21.68484, y: 0, z: 25.59209}
+  myVertices:
+  - {x: -15.79034, y: 0, z: 17.82955}
+  - {x: -16.64602, y: 0, z: 10.79338}
+  - {x: -17.38643, y: -0.22402, z: 6.966935}
+  - {x: -18.11097, y: -0.3032074, z: 3.655565}
+  - {x: -18.99939, y: 0, z: 0.9429135}
+  - {x: -25.11811, y: 0, z: 3.412661}
+  - {x: -28.97993, y: 0, z: 7.589516}
+  - {x: -28.09891, y: 0, z: 12.83029}
+  - {x: -25.97062, y: 0, z: 15.28886}
+  - {x: -25.84221, y: 0, z: 18.47073}
+  - {x: -28.04795, y: 0, z: 20.72934}
+  - {x: -25.98528, y: 0, z: 23.31487}
+  - {x: -21.68484, y: 0, z: 25.59209}
+  myEditable: 1
+  myCurrentMode: 1
+  myModeChangeWait: 0
+  myIsFirstCook: 0
+--- !u!114 &987362194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 987362190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3a9e8ade0cb8a40b446946ded31bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myControl: {fileID: 987362195}
+  myEditable: 1
+  myParmCount: 15
+  myParmIntValueCount: 9
+  myParmFloatValueCount: 2
+  myprParmStringValueCoun: 1
+  myprParmChoiceCount: 19
+  myParms:
+  - id: 0
+    parentId: -1
+    childIndex: 0
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 3
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 0
+    floatValuesIndex: 0
+    stringValuesIndex: 0
+    choiceIndex: 0
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 1
+    parentId: -1
+    childIndex: 1
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 3
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 1
+    floatValuesIndex: 0
+    stringValuesIndex: 0
+    choiceIndex: 3
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 2
+    parentId: -1
+    childIndex: 2
+    type: 6
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 2
+    floatValuesIndex: 0
+    stringValuesIndex: 0
+    choiceIndex: 6
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 3
+    parentId: -1
+    childIndex: 3
+    type: 11
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 2
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 2
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 6
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 4
+    parentId: -1
+    childIndex: 4
+    type: 13
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 5
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 2
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 6
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 5
+    parentId: -1
+    childIndex: 5
+    type: 13
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 3
+    choiceCount: 0
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 2
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 6
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 6
+    parentId: 4
+    childIndex: 0
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 2
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 6
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 7
+    parentId: 4
+    childIndex: 1
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 3
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 8
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 8
+    parentId: 4
+    childIndex: 2
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 4
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 10
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 9
+    parentId: 4
+    childIndex: 3
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 1
+    hasMax: 1
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 2
+    max: 11
+    UIMin: 2
+    UIMax: 11
+    invisible: 0
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 5
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 10
+    parentId: 4
+    childIndex: 4
+    type: 0
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 3
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 6
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 12
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 11
+    parentId: 5
+    childIndex: 0
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 1
+    hasMax: 0
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 7
+    floatValuesIndex: 0
+    stringValuesIndex: 1
+    choiceIndex: 15
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 12
+    parentId: 5
+    childIndex: 1
+    type: 4
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 0
+    hasMin: 1
+    hasMax: 1
+    hasUIMin: 1
+    hasUIMax: 1
+    min: 0
+    max: 1
+    UIMin: 0
+    UIMax: 1
+    invisible: 0
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 7
+    floatValuesIndex: 1
+    stringValuesIndex: 1
+    choiceIndex: 15
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 13
+    parentId: 5
+    childIndex: 2
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 1
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 7
+    floatValuesIndex: 2
+    stringValuesIndex: 1
+    choiceIndex: 15
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  - id: 14
+    parentId: -1
+    childIndex: 12
+    type: 2
+    typeInfoSH: 0
+    permissions: 0
+    tagCount: 0
+    size: 1
+    choiceCount: 2
+    hasMin: 0
+    hasMax: 0
+    hasUIMin: 0
+    hasUIMax: 0
+    min: 0
+    max: 10
+    UIMin: 0
+    UIMax: 10
+    invisible: 0
+    disabled: 0
+    spare: 0
+    joinNext: 0
+    labelNone: 0
+    intValuesIndex: 8
+    floatValuesIndex: 2
+    stringValuesIndex: 1
+    choiceIndex: 17
+    isChildOfMultiParm: 0
+    instanceNum: -1
+    instanceLength: 0
+    instanceCount: 0
+    instanceStartOffset: -1
+    rampType: -1
+  myParmIntValues: 000000000100000000000000000000000000000004000000000000000000000000000000
+  myParmFloatValues:
+  - 0.01
+  - 0
+  myParmStringHandles: bd470000
+  myParmChoiceLists:
+  - parentParmId: 0
+  - parentParmId: 0
+  - parentParmId: 0
+  - parentParmId: 1
+  - parentParmId: 1
+  - parentParmId: 1
+  - parentParmId: 6
+  - parentParmId: 6
+  - parentParmId: 7
+  - parentParmId: 7
+  - parentParmId: 8
+  - parentParmId: 8
+  - parentParmId: 10
+  - parentParmId: 10
+  - parentParmId: 10
+  - parentParmId: 13
+  - parentParmId: 13
+  - parentParmId: 14
+  - parentParmId: 14
+  myParmInfoStrings:
+  - typeInfo: 
+    name: type
+    label: Primitive Type
+    templateName: type
+    help: 
+  - typeInfo: 
+    name: method
+    label: Method
+    templateName: method
+    help: 
+  - typeInfo: 
+    name: coords
+    label: Coordinates
+    templateName: coords
+    help: 
+  - typeInfo: 
+    name: stdswitcher
+    label: 
+    templateName: 
+    help: 
+  - typeInfo: 
+    name: stdswitcher_0
+    label: Curve Properties
+    templateName: stdswitcher_0
+    help: 
+  - typeInfo: 
+    name: stdswitcher_1
+    label: Fitting Properties
+    templateName: stdswitcher_1
+    help: 
+  - typeInfo: 
+    name: close
+    label: Close
+    templateName: close
+    help: 
+  - typeInfo: 
+    name: reverse
+    label: Reverse
+    templateName: reverse
+    help: 
+  - typeInfo: 
+    name: normalize
+    label: Normalize Basis
+    templateName: normalize
+    help: 
+  - typeInfo: 
+    name: order
+    label: Order
+    templateName: order
+    help: 
+  - typeInfo: 
+    name: param
+    label: Parameterization
+    templateName: param
+    help: 
+  - typeInfo: 
+    name: tolerance
+    label: Tolerance
+    templateName: tolerance
+    help: 
+  - typeInfo: 
+    name: smooth
+    label: Smoothness
+    templateName: smooth
+    help: 
+  - typeInfo: 
+    name: csharp
+    label: Preserve Sharp Corners
+    templateName: csharp
+    help: 
+  - typeInfo: 
+    name: keepgeo
+    label: Keep Input Geometry
+    templateName: keepgeo
+    help: 
+  myParmInputs:
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  - isAsset: 0
+    inputObject: {fileID: 0}
+    newInputObject: {fileID: 0}
+    inputNodeId: 0
+    inputNodeUniqueId: 0
+  myParmChoiceInfoStrings:
+  - label: Polygon
+    value: poly
+  - label: NURBS
+    value: nurbs
+  - label: Bezier
+    value: bezier
+  - label: CVs
+    value: cv
+  - label: Breakpoints
+    value: breakpoints
+  - label: Freehand
+    value: freehand
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: Uniform
+    value: uniform
+  - label: Chord Length
+    value: chrdlen
+  - label: Centripetal
+    value: centrip
+  - label: off
+    value: off
+  - label: on
+    value: on
+  - label: off
+    value: off
+  - label: on
+    value: on
+  myParmStringValues:
+  - '15.79034,0,17.82955 16.64602,0,10.79338 17.38643,-0.22402,6.966935 18.11097,-0.3032074,3.655565
+    18.99939,0,0.9429135 25.11811,0,3.412661 28.97993,0,7.589516 28.09891,0,12.83029
+    25.97062,0,15.28886 25.84221,0,18.47073 28.04795,0,20.72934 25.98528,0,23.31487
+    21.68484,0,25.59209 '
+  myLastChangedParmId: -1
+  myParmsUndoInfo: {fileID: 2086238219}
+  myFolderListSelections: 0000000000000000
+  myFolderListSelectionIds: ffffffffffffffff
+--- !u!114 &987362195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 987362190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad31c8232e430a42976eda17d3b3f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAssetId: 75
+  myNodeId: 75
+  myObjectNodeId: 76
+  myAsset: {fileID: 987362195}
+  myObjectId: -1
+  myObjectName: object_name
+  myObjectVisible: 0
+  myObjectInfo:
+    hasTransformChanged: 0
+    haveGeosChanged: 0
+    isVisible: 0
+    isInstancer: 0
+    isInstanced: 0
+    geoCount: 0
+    nodeId: -1
+    objectToInstanceId: 0
+  myGeos: []
+  myNodeInfo:
+    id: 75
+    parentId: 76
+    nameSH: 1153
+    type: 2
+    isValid: 1
+    totalCookCount: 1
+    uniqueHoudiniNodeId: 4149
+    parmCount: 15
+    parmIntValueCount: 9
+    parmFloatValueCount: 2
+    parmStringValueCount: 1
+    parmChoiceCount: 19
+    childNodeCount: 0
+    inputCount: 1
+    createdPostAssetLoad: 1
+  myPreset: 235053495f5052455345540a76657273696f6e20322e30610a6f7076616c7565730a7b0a76657273696f6e20302e380a74797065095b2030096c6f636b733d30205d09280922706f6c792209290a6d6574686f64095b2030096c6f636b733d30205d09280922627265616b706f696e74732209290a636f6f726473095b2030096c6f636b733d30205d0928092231352e37393033342c302c31372e38323935352031362e36343630322c302c31302e37393333382031372e33383634332c2d302e32323430322c362e3936363933352031382e31313039372c2d302e333033323037342c332e3635353536352031382e39393933392c302c302e393432393133352032352e31313831312c302c332e3431323636312032382e39373939332c302c372e3538393531362032382e30393839312c302c31322e38333032392032352e39373036322c302c31352e32383838362032352e38343232312c302c31382e34373037332032382e30343739352c302c32302e37323933342032352e39383532382c302c32332e33313438372032312e36383438342c302c32352e3539323039202209290a7374647377697463686572095b2030096c6f636b733d30205d09280930093009290a636c6f7365095b2030096c6f636b733d30205d092809226f66662209290a72657665727365095b2030096c6f636b733d30205d092809226f66662209290a6e6f726d616c697a65095b2030096c6f636b733d30205d092809226f66662209290a6f72646572095b2030096c6f636b733d30205d0928093409290a706172616d095b2030096c6f636b733d30205d09280922756e69666f726d2209290a746f6c6572616e6365095b2030096c6f636b733d30205d092809302e303109290a736d6f6f7468095b2030096c6f636b733d30205d0928093009290a637368617270095b2030096c6f636b733d30205d092809226f66662209290a6b65657067656f095b2030096c6f636b733d30205d092809226f66662209290a7d0a
+  myAssetValidationId: 4149
+  myAssetName: curve
+  myAssetOpName: Sop/curve
+  myAssetHelp: 
+  myAssetType: 2
+  myTransformInputCount: 0
+  myGeoInputCount: 1
+  myGeoInputsTransformTypes: 01000000
+  myDownStreamTransformAssets: []
+  myUpStreamTransformAssets: []
+  myUpStreamTransformObjects: []
+  myUpStreamGeoAssets:
+  - {fileID: 0}
+  myUpStreamGeoObjects:
+  - {fileID: 0}
+  myUpStreamGeoInputAssetIds: ffffffff
+  myUpStreamGeoInputAssetValidationIds: ffffffff
+  myDownStreamAssets: []
+  myPresetsMap: {fileID: 0}
+  myObjectCount: 0
+  myHandleCount: 1
+  myGameObjects: []
+  myGeoAttributeManagerMap: {fileID: 0}
+  myBakeStartTime: 0
+  myBakeEndTime: 1
+  myBakeSamplesPerSecond: 30
+  myShowHoudiniControls: 1
+  myShowCookLog: 0
+  myShowHelp: 0
+  myShowAssetSettings: 1
+  myShowBakeOptions: 0
+  myShowPaintTools: 0
+  myShowInputControls: 1
+  myAssetOptionsCategory: 0
+  myIsGeoVisible: 1
+  myShowPinnedInstances: 1
+  myShowOnlyVertexColours: 0
+  myGenerateUVs: 0
+  myGenerateLightmapUV2s: 0
+  myGenerateTangents: 1
+  myEnableCooking: 1
+  myCookingTriggersDownCooks: 1
+  myPlaymodePerFrameCooking: 0
+  myPushUnityTransformToHoudini: 1
+  myTransformChangeTriggersCooks: 1
+  myImportTemplatedGeos: 0
+  mySplitGeosByGroupOverride: 0
+  mySplitGeosByGroup: 1
+  mySplitPointsByVertexAttributesOverride: 0
+  mySplitPointsByVertexAttributes: 1
+  myOmitPartNameEnumeration: 0
+  myEnableLogging: 0
+  myTransInputNames: []
+  myGeoInputNames:
+  - 'Geometry Input #1'
+  myLastLocalToWorld:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: -0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  myAssetOTLUndoInfo: {fileID: 43027892}
+--- !u!4 &987362196
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 987362190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!43 &1041761785
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 13
+    topology: 4
+    firstVertex: 0
+    vertexCount: 13
+    localAABB:
+      m_Center: {x: -22.385136, y: -0.1516037, z: 13.267502}
+      m_Extent: {x: 6.594795, y: 0.1516037, z: 12.324589}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 00000100020003000400050006000700080009000a000b000c00
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 5
+    m_VertexCount: 13
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 364
+    _typelessdata: 3ca57cc100000000eba28e41000000000000803f000000000000803f0d2b85c100000000afb12c41000000000000803f000000000000803f69178bc1806565be22f1de40000000000000803f000000000000803f44e390c1003e9bbec7f46940000000000000803f000000000000803fc0fe97c100000000c762713f000000000000803f000000000000803fe4f1c8c1000000000a695a40000000000000803f000000000000803fe6d6e7c10000000051ddf240000000000000803f000000000000803f91cae0c100000000de484d41000000000000803f000000000000803fd4c3cfc1000000002c9f7441000000000000803f000000000000803fd9bccec1000000000ec49341000000000000803f000000000000803f3462e0c100000000b0d5a541000000000000803f000000000000803fdae1cfc100000000db84ba41000000000000803f000000000000803f8d7aadc1000000009abccc41000000000000803f000000000000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: -22.385136, y: -0.1516037, z: 13.267502}
+    m_Extent: {x: 6.594795, y: 0.1516037, z: 12.324589}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!21 &1099649796
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Houdini/Line
+  m_Shader: {fileID: 4800000, guid: a18b443cd91dfe54eb3b1648309f6e00, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1119399146
 GameObject:
   m_ObjectHideFlags: 0
@@ -2083,6 +4223,166 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!43 &1517209450
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 4
+    firstVertex: 0
+    vertexCount: 6
+    localAABB:
+      m_Center: {x: -10.223553, y: 0, z: 16.15503}
+      m_Extent: {x: 11.9634075, y: 0, z: 5.4147806}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 000001000200030004000500
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 5
+    m_VertexCount: 6
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 168
+    _typelessdata: e57eb1c10000000010d82b41000000000000803f000000000000803f483f86c10000000008666141000000000000803f000000000000803fded42ec1000000009f8e5441000000000000803f000000000000803f0945f2c000000000c970a941000000000000803f000000000000803f25930cc000000000f98eac41000000000000803f000000000000803f89b3de3f0000000018ac8341000000000000803f000000000000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: -10.223553, y: 0, z: 16.15503}
+    m_Extent: {x: 11.9634075, y: 0, z: 5.4147806}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &1741751430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b548c5e655726a546b683d0843da0f61, type: 3}
+  m_Name: curve1_UndoInfo
+  m_EditorClassIdentifier: 
+  isGeoVisible: 1
+  showPinnedInstances: 1
+  showOnlyVertexColours: 0
+  generateUVs: 0
+  generateLightmapUV2s: 0
+  generateTangents: 1
+  enableCooking: 1
+  cookingTriggersDownCooks: 1
+  playmodePerFrameCooking: 0
+  pushUnityTransformToHoudini: 1
+  transformChangeTriggersCooks: 1
+  importTemplatedGeos: 0
+  splitGeosByGroupOverride: 0
+  splitGeosByGroup: 1
+  splitPointsGeosByGroupOverride: 0
+  splitPointsByVertexAttribute: 1
+  splitPointsByVertexAttributeOverride: 0
+  omitPartNameEnumeration: 0
+  bakeStartTime: 0
+  bakeEndTime: 1
+  bakeSamplesPerSecond: 30
 --- !u!1 &1789548176
 GameObject:
   m_ObjectHideFlags: 0
@@ -2445,7 +4745,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2081639381}
-  m_LocalRotation: {x: 0.26913983, y: 0.7285064, z: -0.47587836, w: 0.41277346}
+  m_LocalRotation: {x: 0.26913986, y: 0.72850645, z: -0.4758784, w: 0.4127735}
   m_LocalPosition: {x: -6.65, y: 23.5, z: 7.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2455,6 +4755,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2086238219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a6a2b6b2be300d4b8019f770b1db8ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parmNames:
+  - type
+  - method
+  - coords
+  - close
+  - reverse
+  - normalize
+  - order
+  - param
+  - tolerance
+  - smooth
+  - csharp
+  - keepgeo
+  parmIndices: 000000000100000000000000020000000300000004000000050000000600000000000000010000000700000008000000
+  parmIntValues: 000000000100000000000000000000000000000004000000000000000000000000000000
+  parmFloatValues:
+  - 0.01
+  - 0
+  parmStringValues:
+  - '15.79034,0,17.82955 16.64602,0,10.79338 17.38643,-0.22402,6.966935 18.11097,-0.3032074,3.655565
+    18.99939,0,0.9429135 25.11811,0,3.412661 28.97993,0,7.589516 28.09891,0,12.83029
+    25.97062,0,15.28886 25.84221,0,18.47073 28.04795,0,20.72934 25.98528,0,23.31487
+    21.68484,0,25.59209 '
 --- !u!1 &2142566939
 GameObject:
   m_ObjectHideFlags: 0
@@ -2763,8 +5097,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08152646033bb3438079100f8f848ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myAssetId: 0
-  myNodeId: 0
+  myAssetId: -1
+  myNodeId: -1
   myObjectNodeId: 3
   myAsset: {fileID: 2142566941}
   myObjectId: 3
