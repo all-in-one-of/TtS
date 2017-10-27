@@ -74,9 +74,9 @@ Shader "Custom/FinalComposite" {
 				half4 col = lerp(lerpMainA, universeBColorPixel, t);
 				
 
-				//return col;
-				return universeAColorPixel;
-				//return half4(universeADepthPixel,universeADepthPixel,universeADepthPixel,1);
+				return col;
+				//return universeAColorPixel;
+				//return half4(universeBDepthPixel,universeBDepthPixel,universeBDepthPixel,1);
 				//return universeBColorPixel*half4(universeBDepthPixel,universeBDepthPixel,universeBDepthPixel,1);
 				//return half4(universeBDepthPixel,universeBDepthPixel,universeBDepthPixel,1);
 			}
