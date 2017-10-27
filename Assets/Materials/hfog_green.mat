@@ -57,7 +57,7 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _DepthPosition: -5
+    - _DepthPosition: -29.2
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Emission: 0.8
@@ -78,4 +78,4 @@ Material:
     - _Color: {r: 0.66176474, g: 0.29195502, b: 0.29195502, a: 1}
     - _DepthColor: {r: 0.31617647, g: 0.07206963, b: 0.07206963, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SurfaceColor: {r: 0.8161765, g: 0.7324066, b: 0.5521194, a: 1}
+    - _SurfaceColor: {r: 0.75194633, g: 0.83823526, b: 0.8275235, a: 1}
