@@ -38,13 +38,13 @@ public class CameraRenderScript : MonoBehaviour {
         depthHackBufferA.name = "Vision Cone Depth Hack Buffer A";
         depthHackBufferA.DrawRenderer(visionConeA, new Material(Shader.Find("Hidden/DepthHack")));
 
-        cameraA.AddCommandBuffer(CameraEvent.BeforeForwardOpaque, depthHackBufferA);
+        cameraA.AddCommandBuffer(CameraEvent.AfterDepthTexture, depthHackBufferA);
 
         depthHackBufferB = new CommandBuffer();
         depthHackBufferB.ClearRenderTarget(true, true, Color.black, 0);
         depthHackBufferB.name = "Vision Cone Depth Hack Buffer A";
         depthHackBufferB.DrawRenderer(visionConeB, new Material(Shader.Find("Hidden/DepthHack")));
 
-        cameraB.AddCommandBuffer(CameraEvent.BeforeForwardOpaque, depthHackBufferB);
+        cameraB.AddCommandBuffer(CameraEvent.AfterDepthTexture, depthHackBufferB);
     }
 }

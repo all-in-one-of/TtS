@@ -16,7 +16,7 @@
 		//Cull Off
 		//ZTest Always
 		//ZWrite Off
-		Blend SrcAlpha SrcAlpha
+		Blend SrcAlpha OneMinusSrcAlpha
 
 		Pass
 		{

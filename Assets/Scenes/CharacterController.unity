@@ -493,12 +493,12 @@ Prefab:
     - target: {fileID: 20140875878844232, guid: 238d79b746041574cae9807542786604,
         type: 2}
       propertyPath: m_CullingMask.m_Bits
-      value: 4294966783
+      value: 4294965759
       objectReference: {fileID: 0}
     - target: {fileID: 20650787592081320, guid: 238d79b746041574cae9807542786604,
         type: 2}
       propertyPath: m_CullingMask.m_Bits
-      value: 4294967039
+      value: 4294966015
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 238d79b746041574cae9807542786604, type: 2}
@@ -679,7 +679,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &661058817
 Transform:
   m_ObjectHideFlags: 0
@@ -1015,7 +1015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1219273656
 Transform:
   m_ObjectHideFlags: 0
@@ -1149,7 +1149,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1225570378}
   m_Mesh: {fileID: 4300006, guid: a6eec84d81f28e04f8c41423c4702a8c, type: 3}
---- !u!43 &1421953159
+--- !u!43 &1410774410
 Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1887,7 +1887,7 @@ GameObject:
   - component: {fileID: 2087696788}
   - component: {fileID: 2087696787}
   - component: {fileID: 2087696790}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1934,7 +1934,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2087696786}
-  m_Mesh: {fileID: 1421953159}
+  m_Mesh: {fileID: 1410774410}
 --- !u!4 &2087696789
 Transform:
   m_ObjectHideFlags: 0
