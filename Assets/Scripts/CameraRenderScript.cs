@@ -33,20 +33,22 @@ public class CameraRenderScript : MonoBehaviour {
 
         visionConeMaterialA.material.SetTexture("_UniverseTexture", renderTextureA);
         visionConeMaterialB.material.SetTexture("_UniverseTexture", renderTextureB);
-
+        
+        /*
         depthHackBufferA = new CommandBuffer();
         depthHackBufferA.ClearRenderTarget(true, true, Color.black, 0);
         depthHackBufferA.name = "Vision Cone Depth Hack Buffer A";
         depthHackBufferA.DrawRenderer(visionConeA, new Material(Shader.Find("Hidden/DepthHack")));
 
         cameraA.AddCommandBuffer(CameraEvent.BeforeDepthTexture, depthHackBufferA);
-
+        
         depthHackBufferB = new CommandBuffer();
         depthHackBufferB.ClearRenderTarget(true, true, Color.black, 0);
         depthHackBufferB.name = "Vision Cone Depth Hack Buffer B";
         depthHackBufferB.DrawRenderer(visionConeB, new Material(Shader.Find("Hidden/DepthHack")));
 
         cameraB.AddCommandBuffer(CameraEvent.BeforeDepthTexture, depthHackBufferB);
+        */
     }
     
 }
