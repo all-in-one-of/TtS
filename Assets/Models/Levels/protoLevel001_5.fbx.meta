@@ -6,10 +6,20 @@ ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: protoLevel_MeshPart0
+    100004: protoLevel_MeshPart1
     400000: //RootNode
+    400002: protoLevel_MeshPart0
+    400004: protoLevel_MeshPart1
     2300000: //RootNode
+    2300002: protoLevel_MeshPart0
+    2300004: protoLevel_MeshPart1
     3300000: //RootNode
+    3300002: protoLevel_MeshPart0
+    3300004: protoLevel_MeshPart1
     4300000: protoLevel
+    4300002: protoLevel_MeshPart0
+    4300004: protoLevel_MeshPart1
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -64,9 +74,9 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 0
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 2
-    tangentImportMode: 2
+    normalSmoothAngle: 12
+    normalImportMode: 1
+    tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
   copyAvatar: 0
