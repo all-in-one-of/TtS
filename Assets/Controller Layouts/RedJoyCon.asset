@@ -17,5 +17,5 @@ MonoBehaviour:
   visionButton: Button 19
   jumpButton: Button 4
   buttonVision: 1
-  invertX: 1
+  invertX: 0
   invertY: 1

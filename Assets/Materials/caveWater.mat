@@ -69,16 +69,16 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Opacity: 0.413
-    - _Panning: 1.26
+    - _Opacity: 0.693
+    - _Panning: 0.86
     - _Parallax: 0.02
-    - _Refraction: 0.065
+    - _Refraction: 0.122
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _TileHeight: 3
     - _TileWidth: 3
-    - _Tiling: 1
+    - _Tiling: 2.2
     - _UVSec: 0
     - _ZWrite: 1
     - _tiling: 1100.3

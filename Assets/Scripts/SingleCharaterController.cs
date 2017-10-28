@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SingleCharaterController : MonoBehaviour {
 
+    private Vector3 startPosition;
+
     public PlayerControls playerControls;
 
     [Header("Movement variables")]
@@ -48,6 +50,7 @@ public class SingleCharaterController : MonoBehaviour {
         velocity = Vector3.zero;
         lastLivingPoint = transform.position;
         dead = false;
+        startPosition = transform.position;
     }
 	
 	// Update is called once per frame
@@ -170,8 +173,12 @@ public class SingleCharaterController : MonoBehaviour {
 
     public void restartCurrentScene()
     {
+        /*
         int scene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
+        */
+        transform.position = startPosition;
+        dead = false;
     }
 
 }

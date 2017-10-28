@@ -12,13 +12,13 @@ public class CameraFollowScript : MonoBehaviour {
     private SingleCharaterController characterController1;
     private SingleCharaterController characterController2;
 
-    private Vector3 lowestCameraPoint;
-    private Vector3 highestCameraPoint;
+    [SerializeField]
+    private Vector3 lowestCameraPoint = new Vector3(0, 50, 0);
+    [SerializeField]
+    private Vector3 highestCameraPoint = new Vector3(0, 70, 0);
 
     // Use this for initialization
     void Start () {
-        lowestCameraPoint = new Vector3(0, 30, 0);
-        highestCameraPoint = new Vector3(0, 50, -10);
         characterController1 = player1.GetComponent<SingleCharaterController>();
         characterController2 = player2.GetComponent<SingleCharaterController>();
     }
