@@ -12,7 +12,7 @@ public class CameraFollowScript : MonoBehaviour {
     private Vector3 trackDistance;
     // Use this for initialization
     void Start () {
-        trackDistance = new Vector3(0, 20, -20);
+        trackDistance = new Vector3(0, 40, 0);
 
     }
 	

@@ -57,7 +57,7 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _DepthPosition: -37
+    - _DepthPosition: -3.66
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Emission: 0.83
