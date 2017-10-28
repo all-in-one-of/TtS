@@ -9,10 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d35f0650c50b7cf46b2f3e61a920d2cf, type: 3}
-  m_Name: BlueJoyCon
+  m_Name: LeftController
   m_EditorClassIdentifier: 
   player: 0
-  horizontalAxis: Axis 2
-  verticalAxis: Axis 1
-  visionButton: Button 3
+  horizontalAxis: Axis 1
+  verticalAxis: Axis 2
+  visionButton: Axis 9
   jumpButton: Button 4
+  buttonVision: 0
+  invertX: 0
+  invertY: 1

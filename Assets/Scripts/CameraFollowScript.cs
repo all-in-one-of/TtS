@@ -5,29 +5,54 @@ using UnityEngine;
 public class CameraFollowScript : MonoBehaviour {
 
     [SerializeField]
-    private Transform player1;
+    private GameObject player1;
     [SerializeField]
-    private Transform player2;
+    private GameObject player2;
 
-    private Vector3 trackDistance;
+    private SingleCharaterController characterController1;
+    private SingleCharaterController characterController2;
+
+    private Vector3 lowestCameraPoint;
+    private Vector3 highestCameraPoint;
+
     // Use this for initialization
     void Start () {
-        trackDistance = new Vector3(0, 40, 0);
-
+        lowestCameraPoint = new Vector3(0, 30, 0);
+        highestCameraPoint = new Vector3(0, 50, -10);
+        characterController1 = player1.GetComponent<SingleCharaterController>();
+        characterController2 = player2.GetComponent<SingleCharaterController>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-        float distance = (player1.position - player2.position).magnitude;
-        Vector3 midPoint = (player1.position + player2.position) /2;
-        float addDistance = 1;
-        if (distance > 30)
-            addDistance = 1 + (distance - 30) * 0.05f;
 
-        if (distance > 50)
-            addDistance = 1 + (50 - 30) * 0.05f;
+        Vector3 point1, point2;
+        if(characterController1.dead)
+        {
+            point1 = player2.transform.position;
+            point2 = player2.transform.position;
+        } else if (characterController2.dead)
+        {
+            point1 = player1.transform.position;
+            point2 = player1.transform.position;
+        } else
+        {
+            point1 = player1.transform.position;
+            point2 = player2.transform.position;
+        }
 
-        transform.position = midPoint + trackDistance * addDistance;
+        float distance = (point1 - point2).magnitude;
+        Vector3 midPoint = (point1 + point2) /2;
+        Vector3 camPos = midPoint;
 
+        if (distance < lowestCameraPoint.y)
+            camPos = new Vector3(midPoint.x, lowestCameraPoint.y, midPoint.z);
+        else if (distance > highestCameraPoint.y)
+            camPos = new Vector3(midPoint.x, highestCameraPoint.y, midPoint.z);
+        else
+            camPos = new Vector3(midPoint.x, distance, midPoint.z);
+
+        transform.position = Vector3.Lerp(transform.position, camPos, Time.deltaTime*2.0f);
+        //transform.LookAt(midPoint);
     }
 }

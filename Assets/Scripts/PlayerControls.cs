@@ -9,4 +9,7 @@ public class PlayerControls : ScriptableObject
     public string verticalAxis = "Axis 2";
     public string visionButton = "Axis 9";
     public string jumpButton = "Button 4";
+    public bool buttonVision = false;
+    public bool invertX = false;
+    public bool invertY = false;
 }
