@@ -59,15 +59,13 @@ public class CameraFollowScript : MonoBehaviour {
         {
             float percentage = (distance-lowestCameraPoint.y) / (highestCameraPoint.y-lowestCameraPoint.y);
             camPos = new Vector3(midPoint.x + lowestCameraPoint.y + (highestCameraPoint.x- lowestCameraPoint.y)* percentage, distance, midPoint.z + highestCameraPoint.z);
-            Debug.Log("M:" + midPoint.x);
-            Debug.Log("P:" + percentage);
-            Debug.Log("H*P:" + highestCameraPoint.x * percentage);
         }
-            
-
-        
 
         transform.position = Vector3.Lerp(transform.position, camPos, Time.deltaTime*2.0f);
         //transform.LookAt(midPoint);
+
+        Quaternion targetRotation = Quaternion.LookRotation(midPoint - transform.position);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 2.0f * Time.deltaTime);
+
     }
 }
