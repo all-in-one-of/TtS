@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: KeyboardWASD
   m_EditorClassIdentifier: 
   player: 1
-  horizontalAxis: HorizontalWASD
-  verticalAxis: VerticalWASD
+  horizontalAxis: VerticalWASD
+  verticalAxis: HorizontalWASD
   visionButton: Fire1
   jumpButton: Button 5
   buttonVision: 1
-  invertX: 0
+  invertX: 1
   invertY: 0

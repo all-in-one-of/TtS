@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: KeyboardKeys
   m_EditorClassIdentifier: 
   player: 1
-  horizontalAxis: HorizontalKeys
-  verticalAxis: VerticalKeys
+  horizontalAxis: VerticalKeys
+  verticalAxis: HorizontalKeys
   visionButton: Fire2
   jumpButton: Button 5
   buttonVision: 1
-  invertX: 0
+  invertX: 1
   invertY: 0
