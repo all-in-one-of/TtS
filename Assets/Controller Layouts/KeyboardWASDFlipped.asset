@@ -9,13 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d35f0650c50b7cf46b2f3e61a920d2cf, type: 3}
-  m_Name: RightController
+  m_Name: KeyboardWASDFlipped
   m_EditorClassIdentifier: 
   player: 1
-  horizontalAxis: Axis 5
-  verticalAxis: Axis 4
-  visionButton: Axis 10
+  horizontalAxis: VerticalWASD
+  verticalAxis: HorizontalWASD
+  visionButton: Fire1
   jumpButton: Button 5
-  buttonVision: 0
-  invertX: 0
+  buttonVision: 1
+  invertX: 1
   invertY: 0

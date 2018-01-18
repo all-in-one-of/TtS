@@ -46,11 +46,11 @@ public class CameraFollowScript : MonoBehaviour {
         Vector3 camPos = midPoint;
 
         if (distance < lowestCameraPoint.y)
-            camPos = new Vector3(midPoint.x, lowestCameraPoint.y, midPoint.z);
+            camPos = new Vector3(midPoint.x + lowestCameraPoint.x, lowestCameraPoint.y, midPoint.z + lowestCameraPoint.z);
         else if (distance > highestCameraPoint.y)
-            camPos = new Vector3(midPoint.x, highestCameraPoint.y, midPoint.z);
+            camPos = new Vector3(midPoint.x + lowestCameraPoint.x, highestCameraPoint.y, midPoint.z + lowestCameraPoint.z);
         else
-            camPos = new Vector3(midPoint.x, distance, midPoint.z);
+            camPos = new Vector3(midPoint.x + lowestCameraPoint.x, distance, midPoint.z + lowestCameraPoint.z);
 
         transform.position = Vector3.Lerp(transform.position, camPos, Time.deltaTime*2.0f);
         //transform.LookAt(midPoint);
