@@ -57,10 +57,10 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _DepthPosition: -3.89
+    - _DepthPosition: -3.6
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Emission: 0.37
+    - _Emission: 0.83
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -71,11 +71,11 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SurfacePosition: 3.33
+    - _SurfacePosition: 0
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.66176474, g: 0.29195502, b: 0.29195502, a: 1}
     - _DepthColor: {r: 0.024599906, g: 0.23809068, b: 0.25735295, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SurfaceColor: {r: 0.567, g: 0.5287099, b: 0.480249, a: 1}
+    - _SurfaceColor: {r: 0.5514706, g: 0.50281143, b: 0.50281143, a: 1}

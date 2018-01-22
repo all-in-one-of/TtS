@@ -48,7 +48,6 @@ public class CameraFollowScript : MonoBehaviour {
         
 
         if (distance < lowestCameraPoint.y)
-<<<<<<< HEAD
         {
             camPos = new Vector3(midPoint.x + lowestCameraPoint.x, lowestCameraPoint.y, midPoint.z + lowestCameraPoint.z);
         }
@@ -61,13 +60,6 @@ public class CameraFollowScript : MonoBehaviour {
             float percentage = (distance-lowestCameraPoint.y) / (highestCameraPoint.y-lowestCameraPoint.y);
             camPos = new Vector3(midPoint.x + lowestCameraPoint.y + (highestCameraPoint.x- lowestCameraPoint.y)* percentage, distance, midPoint.z + highestCameraPoint.z);
         }
-=======
-            camPos = new Vector3(midPoint.x + lowestCameraPoint.x, lowestCameraPoint.y, midPoint.z + lowestCameraPoint.z);
-        else if (distance > highestCameraPoint.y)
-            camPos = new Vector3(midPoint.x + lowestCameraPoint.x, highestCameraPoint.y, midPoint.z + lowestCameraPoint.z);
-        else
-            camPos = new Vector3(midPoint.x + lowestCameraPoint.x, distance, midPoint.z + lowestCameraPoint.z);
->>>>>>> refs/remotes/origin/master
 
         transform.position = Vector3.Lerp(transform.position, camPos, Time.deltaTime*2.0f);
         //transform.LookAt(midPoint);

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: RightController
   m_EditorClassIdentifier: 
   player: 1
-  horizontalAxis: Axis 5
-  verticalAxis: Axis 4
+  horizontalAxis: Axis 4
+  verticalAxis: Axis 5
   visionButton: Axis 10
   jumpButton: Button 5
   buttonVision: 0
   invertX: 0
-  invertY: 0
+  invertY: 1
