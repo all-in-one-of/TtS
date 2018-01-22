@@ -99,9 +99,9 @@ NavMeshSettings:
     serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
-    agentHeight: 2
+    agentHeight: 1
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: 1
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -112,7 +112,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 2a24e10a923d4d9468b399cec7c06178, type: 2}
 --- !u!1 &10726594
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,12 +124,12 @@ GameObject:
   - component: {fileID: 10726597}
   - component: {fileID: 10726596}
   - component: {fileID: 10726595}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &10726595
 MeshRenderer:
@@ -242,6 +242,10 @@ Prefab:
       objectReference: {fileID: 2100000, guid: ca955ed4f93163d489b7920726507b85, type: 2}
     - target: {fileID: 100000, guid: ed27ad252997a8641a41381edb0b43a5, type: 3}
       propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ed27ad252997a8641a41381edb0b43a5, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -370,6 +374,10 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 86bd68aab9c73494cbf3f132e20016a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86bd68aab9c73494cbf3f132e20016a6, type: 3}
   m_IsPrefabParent: 0
@@ -459,7 +467,7 @@ GameObject:
   - component: {fileID: 307658702}
   - component: {fileID: 307658704}
   - component: {fileID: 307658703}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: VisionConeBRender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -987,7 +995,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 669f17ac0de504945b89db296b480804, type: 2}
     - target: {fileID: 100000, guid: 44c97269a4a531547b50a51391e9b2b2, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 44c97269a4a531547b50a51391e9b2b2, type: 3}
@@ -1128,7 +1136,7 @@ GameObject:
   - component: {fileID: 875775945}
   - component: {fileID: 875775947}
   - component: {fileID: 875775946}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: VisionConeSphereRender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1280,6 +1288,10 @@ Prefab:
     - target: {fileID: 100000, guid: ebb2981b1c71dec4f83db2453de138b0, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ebb2981b1c71dec4f83db2453de138b0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ebb2981b1c71dec4f83db2453de138b0, type: 3}
@@ -2461,6 +2473,7 @@ GameObject:
   - component: {fileID: 1775468812}
   - component: {fileID: 1775468816}
   - component: {fileID: 1775468815}
+  - component: {fileID: 1775468817}
   m_Layer: 12
   m_Name: Princess
   m_TagString: Player
@@ -2582,6 +2595,27 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_DirtyAABB: 1
+--- !u!195 &1775468817
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1775468811}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 5
+  m_Acceleration: 1000
+  avoidancePriority: 50
+  m_AngularSpeed: 5000
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1797895709
 GameObject:
   m_ObjectHideFlags: 0
@@ -2703,7 +2737,11 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 1820dd6c971986944a1baaebbb33144d, type: 2}
     - target: {fileID: 100000, guid: 35debe0beeb6e864aac1d5e6fac6f959, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 35debe0beeb6e864aac1d5e6fac6f959, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35debe0beeb6e864aac1d5e6fac6f959, type: 3}
@@ -2753,6 +2791,10 @@ Prefab:
       objectReference: {fileID: 2100000, guid: ca955ed4f93163d489b7920726507b85, type: 2}
     - target: {fileID: 100000, guid: 5a9dd0672d1213d4d9fc8ef611ca48fc, type: 3}
       propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5a9dd0672d1213d4d9fc8ef611ca48fc, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2922,7 +2964,7 @@ Prefab:
     - target: {fileID: 20860371932236990, guid: 238d79b746041574cae9807542786604,
         type: 2}
       propertyPath: m_CullingMask.m_Bits
-      value: 4294964479
+      value: 4294964478
       objectReference: {fileID: 0}
     - target: {fileID: 20860371932236990, guid: 238d79b746041574cae9807542786604,
         type: 2}
@@ -3565,7 +3607,7 @@ GameObject:
   - component: {fileID: 2061139965}
   - component: {fileID: 2061139967}
   - component: {fileID: 2061139966}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: VisionConeARender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4084,6 +4126,7 @@ GameObject:
   - component: {fileID: 2141216990}
   - component: {fileID: 2141216989}
   - component: {fileID: 2141216988}
+  - component: {fileID: 2141216991}
   m_Layer: 12
   m_Name: Warrior
   m_TagString: Player
@@ -4144,3 +4187,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!195 &2141216991
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2141216987}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 5
+  m_Acceleration: 1000
+  avoidancePriority: 50
+  m_AngularSpeed: 5000
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
