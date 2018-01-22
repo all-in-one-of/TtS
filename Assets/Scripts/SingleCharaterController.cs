@@ -107,7 +107,7 @@ public class SingleCharaterController : MonoBehaviour {
                 if (raycastHitInfo.collider.gameObject.tag == "DeathZone")
                 {
                     dead = true;
-                    transform.position = lastLivingPoint;
+                    transform.position = lastLivingPoint+Vector3.up*2.0f;
                 }
                 else
                 {
