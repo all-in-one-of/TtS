@@ -4198,6 +4198,7 @@ Transform:
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!195 &2141216991
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4224,5 +4225,7 @@ NavMeshAgent:
     type: 2}
   m_PrefabInternal: {fileID: 565701690}
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> parent of 24e352c... Fixed up vision cone water render issue, added navmesh to test level
 =======
 >>>>>>> parent of 24e352c... Fixed up vision cone water render issue, added navmesh to test level
