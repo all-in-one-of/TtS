@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: KeyboardWASDFlipped
   m_EditorClassIdentifier: 
   player: 1
-  horizontalAxis: VerticalWASD
-  verticalAxis: HorizontalWASD
+  horizontalAxis: HorizontalWASD
+  verticalAxis: VerticalWASD
   visionButton: Fire1
   jumpButton: Button 5
   buttonVision: 1
   invertX: 1
-  invertY: 0
+  invertY: 1
