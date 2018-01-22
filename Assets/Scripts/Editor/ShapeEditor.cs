@@ -62,7 +62,7 @@ public class ShapeEditor : Editor {
         if (guiEvent.type == EventType.Repaint)
         {
             Draw();
-        } else if (guiEvent.type == EventType.layout)
+        } else if (guiEvent.type == EventType.Layout)
         {
             HandleUtility.AddDefaultControl(GUIUtility.GetControlID(FocusType.Passive));
         } else
@@ -133,22 +133,22 @@ public class ShapeEditor : Editor {
         float dstToDrawPlane = (drawPlaneHeight - mouseRay.origin.y) / mouseRay.direction.y;
         Vector3 mousePosition = mouseRay.GetPoint(dstToDrawPlane);
 
-        if (guiEvent.type == EventType.mouseDown && guiEvent.button == 0 && guiEvent.modifiers == EventModifiers.Shift)
+        if (guiEvent.type == EventType.MouseDown && guiEvent.button == 0 && guiEvent.modifiers == EventModifiers.Shift)
         {
             HandleShiftLeftMouseDown(mousePosition);
         }
 
-        if (guiEvent.type == EventType.mouseDown && guiEvent.button == 0 && guiEvent.modifiers == EventModifiers.None)
+        if (guiEvent.type == EventType.MouseDown && guiEvent.button == 0 && guiEvent.modifiers == EventModifiers.None)
         {
             HandleLeftMouseDown(mousePosition);
         }
 
-        if (guiEvent.type == EventType.mouseUp && guiEvent.button == 0)
+        if (guiEvent.type == EventType.MouseUp && guiEvent.button == 0)
         {
             HandleLeftMouseUp(mousePosition);
         }
 
-        if (guiEvent.type == EventType.mouseDrag && guiEvent.button == 0 && guiEvent.modifiers == EventModifiers.None)
+        if (guiEvent.type == EventType.MouseDrag && guiEvent.button == 0 && guiEvent.modifiers == EventModifiers.None)
         {
             HandleLeftMouseDrag(mousePosition);
         }
