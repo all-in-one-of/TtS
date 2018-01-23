@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18320346, g: 0.22885634, b: 0.30646965, a: 1}
+  m_IndirectSpecularColor: {r: 0.18320368, g: 0.22885658, b: 0.30647042, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -369,6 +369,16 @@ Prefab:
     - target: {fileID: 4750833183654448, guid: 8cb89845b21c0724cbca774e78decfd1, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114405576423749754, guid: 8cb89845b21c0724cbca774e78decfd1,
+        type: 2}
+      propertyPath: playerControls
+      value: 
+      objectReference: {fileID: 11400000, guid: 6672039e47577c8449b649aba97900a2,
+        type: 2}
+    - target: {fileID: 1951027655575684, guid: 8cb89845b21c0724cbca774e78decfd1, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8cb89845b21c0724cbca774e78decfd1, type: 2}
@@ -877,6 +887,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114553892726001350, guid: e83cb5ab3ea84f8429a139e074c00452,
+        type: 2}
+      propertyPath: playerControls
+      value: 
+      objectReference: {fileID: 11400000, guid: 4f2d3060f84160444a15faa052ab1b25,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e83cb5ab3ea84f8429a139e074c00452, type: 2}
   m_IsPrefabParent: 0
@@ -1472,8 +1488,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 1775468811}
   player2: {fileID: 2141216987}
-  lowestCameraPoint: {x: 15, y: 20, z: 0}
-  highestCameraPoint: {x: 40, y: 30, z: 0}
+  lowestCameraPoint: {x: 30, y: 40, z: 0}
+  highestCameraPoint: {x: 40, y: 50, z: 0}
 --- !u!114 &1972094886
 MonoBehaviour:
   m_ObjectHideFlags: 0

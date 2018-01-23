@@ -64,8 +64,8 @@ public class CameraFollowScript : MonoBehaviour {
         transform.position = Vector3.Lerp(transform.position, camPos, Time.deltaTime*2.0f);
         //transform.LookAt(midPoint);
 
-        Quaternion targetRotation = Quaternion.LookRotation(midPoint - transform.position);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 2.0f * Time.deltaTime);
+        //Quaternion targetRotation = Quaternion.LookRotation(midPoint - transform.position);
+        //transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 2.0f * Time.deltaTime);
 
     }
 }
