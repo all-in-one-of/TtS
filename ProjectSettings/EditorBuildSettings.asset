@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SceneSelect.unity
+    guid: f2b47081e654aea4a9610e3e291529e1
+  - enabled: 1
+    path: Assets/Scenes/MovingCameraLevel.unity
+    guid: ffde90f205da9374d968ad79b177a34e
+  - enabled: 1
+    path: Assets/Scenes/FixedCameraLevel.unity
+    guid: 532666fc29067fb4cafa3c7bef0bece2

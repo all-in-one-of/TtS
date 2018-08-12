@@ -1653,7 +1653,7 @@ Prefab:
         type: 2}
       propertyPath: playerControls
       value: 
-      objectReference: {fileID: 11400000, guid: bcdda78cd29a6ae4fa48be74bc6b7af3,
+      objectReference: {fileID: 11400000, guid: b02d762cef9991140ba6b4112eb121c2,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e83cb5ab3ea84f8429a139e074c00452, type: 2}
@@ -3493,7 +3493,7 @@ Prefab:
         type: 2}
       propertyPath: playerControls
       value: 
-      objectReference: {fileID: 11400000, guid: 3d552fbd803c65b438637bb186ef97f7,
+      objectReference: {fileID: 11400000, guid: 8a63bdc454220544499b9de82fbbbbd3,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8cb89845b21c0724cbca774e78decfd1, type: 2}

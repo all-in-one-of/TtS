@@ -58,6 +58,10 @@ public class SingleCharaterController : MonoBehaviour {
 
         if(Input.GetKeyDown(KeyCode.Escape))
         {
+            returnToMenu();
+        }
+        if(Input.GetKeyDown(KeyCode.R))
+        {
             restartCurrentScene();
         }
 
@@ -179,6 +183,11 @@ public class SingleCharaterController : MonoBehaviour {
         */
         transform.position = startPosition;
         dead = false;
+    }
+
+    public void returnToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
 }
