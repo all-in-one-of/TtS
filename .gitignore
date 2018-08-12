@@ -34,3 +34,5 @@ sysinfo.txt
 *.unitypackage
 HoudiniTemp/HoudiniSessionData.txt
 HoudiniTemp/HoudiniSessionData.txt
+
+ProjectSettings/ProjectVersion\.txt
