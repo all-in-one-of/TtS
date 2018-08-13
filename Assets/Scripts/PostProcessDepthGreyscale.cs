@@ -1,11 +1,12 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 //so that we can see changes we make without having to run the game
 
 public class PostProcessDepthGreyscale : MonoBehaviour
 {
-    private RenderTexture outputTexture;
+    public RenderTexture colorTexture;
+    public RenderTexture depthTexture;
     public Material mat;
 
     [SerializeField]
@@ -13,24 +14,33 @@ public class PostProcessDepthGreyscale : MonoBehaviour
 
     void Start()
     {
-        outputTexture = new RenderTexture(Screen.width, Screen.height, 24);
-        //GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
+        colorTexture = new RenderTexture(Screen.width, Screen.height, 32, RenderTextureFormat.ARGBFloat);
+        colorTexture.name = gameObject.name + "_ColorTexture";
+
+        GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
+
+        depthTexture = new RenderTexture(Screen.width, Screen.height, 32, RenderTextureFormat.Depth);
+        depthTexture.name = gameObject.name + "_DepthTexture";
     }
 
     void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        Graphics.Blit(source, destination);
-        Graphics.Blit(source, outputTexture, mat);
+        Graphics.Blit(source, depthTexture, mat);
+        Graphics.Blit(source, colorTexture);
 
         if (world == 0)
         {
-            Shader.SetGlobalTexture("_UniverseAColorTexture", destination);
-            Shader.SetGlobalTexture("_UniverseADepthTexture", outputTexture);
+            Shader.SetGlobalTexture("_UniverseAColorTexture", depthTexture);
+            Shader.SetGlobalTexture("_UniverseADepthTexture", colorTexture);
         } else
         {
-            Shader.SetGlobalTexture("_UniverseBColorTexture", destination);
-            Shader.SetGlobalTexture("_UniverseBDepthTexture", outputTexture);
+            Shader.SetGlobalTexture("_UniverseBColorTexture", depthTexture);
+            Shader.SetGlobalTexture("_UniverseBDepthTexture", colorTexture);
         }
+
+        Graphics.Blit(source, destination);
+
+
     }
-    
+
 }

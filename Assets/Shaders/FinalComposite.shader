@@ -1,4 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
 Shader "Custom/FinalComposite" {
 	SubShader {
@@ -51,12 +51,12 @@ Shader "Custom/FinalComposite" {
 			//Fragment Shader
 			half4 frag (v2f i) : COLOR{
 
-				float mainCamDepthValue = Linear01Depth (tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(i.scrPos)).r);
+				float mainCamDepthValue = LinearEyeDepth(tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(i.scrPos)).r);
 				
 				float2 inverseUV = float2(i.uv.x, 1-i.uv.y);
 
 				half4 mainCamColorPixel = tex2D(_MainCameraColorTexture, i.uv);
-				float mainCamDepthPixel = 1-half4(mainCamDepthValue,mainCamDepthValue,mainCamDepthValue,1).r;
+				float mainCamDepthPixel = 1-mainCamDepthValue;
 
 				half4 universeAColorPixel = tex2D(_UniverseAColorTexture, i.uv);
 				float universeADepthPixel = tex2D(_VisionConeCutoutTexture, i.uv).r * (1-tex2D(_UniverseADepthTexture, inverseUV).r);

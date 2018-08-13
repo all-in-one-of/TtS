@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -23,10 +23,16 @@ public class CameraRenderScript : MonoBehaviour {
     private Renderer visionConeMaterialB;
 
 
+    public RenderTexture renderTextureA;
+    public RenderTexture renderTextureB;
+
     private void Awake()
     {
-        var renderTextureA = new RenderTexture(Screen.width, Screen.height, 24);
-        var renderTextureB = new RenderTexture(Screen.width, Screen.height, 24);
+        renderTextureA = new RenderTexture(Screen.width, Screen.height, 32, RenderTextureFormat.ARGBFloat);
+        renderTextureB = new RenderTexture(Screen.width, Screen.height, 32, RenderTextureFormat.ARGBFloat);
+
+        renderTextureA.name = "Render Texture A";
+        renderTextureB.name = "Render Texture B";
 
         cameraA.targetTexture = renderTextureA;
         cameraB.targetTexture = renderTextureB;
@@ -50,5 +56,14 @@ public class CameraRenderScript : MonoBehaviour {
         cameraB.AddCommandBuffer(CameraEvent.BeforeDepthTexture, depthHackBufferB);
         */
     }
-    
+
+    private void Update()
+    {
+        //renderTextureA.width = Screen.width;
+        //renderTextureA.height = Screen.height;
+
+        //renderTextureB.width = Screen.width;
+        //renderTextureB.height = Screen.height;
+    }
+
 }
